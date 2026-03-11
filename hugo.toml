@@ -1,3 +1,68 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://xn--e1afkbacfh5a6i.xn--p1ai/"
+title = "космолед"
+theme = "hugo-coder"
+defaultContentLanguage = "ru"
+paginate = 10
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "monokai"
+
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    weight = 1
+    title = "космолед"
+    [languages.ru.params]
+      description = "Спутники, лёд, нейросети — блог о дистанционном зондировании Арктики"
+      info = "Исследователь · Арктика · ML"
+    [[languages.ru.menu.main]]
+      name = "Записи"
+      url = "/posts/"
+      weight = 1
+    [[languages.ru.menu.main]]
+      name = "Об авторе"
+      url = "/about/"
+      weight = 2
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "kosmoled"
+    [languages.en.params]
+      description = "Satellites, ice, neural networks — Arctic remote sensing blog"
+      info = "Researcher · Arctic · ML"
+    [[languages.en.menu.main]]
+      name = "Posts"
+      url = "/posts/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 2
+
+[params]
+  author = "Ilya Bolkhovskiy"
+  avatarURL = ""
+  since = 2026
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  math = true
+  katex = true
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa-brands fa-github"
+  weight = 1
+  url = "https://github.com/bolkhovsky/"
+
+[[params.social]]
+  name = "ORCID"
+  icon = "fa-brands fa-orcid"
+  weight = 2
+  url = "https://orcid.org/0009-0003-8105-3875"
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
